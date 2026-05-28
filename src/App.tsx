@@ -141,7 +141,6 @@ const [editedText, setEditedText] =
   editedText={editedText}
   aiPrompt={aiPrompt}
   setAiPrompt={setAiPrompt}
-  loading={loading}
   onExtract={handleOCR}
   onAIEdit={handleAIEdit}
 />
