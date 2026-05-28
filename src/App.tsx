@@ -24,7 +24,6 @@ const [editedText, setEditedText] =
 
   const {
     text,
-    loading,
     runOCR,
   } = useOCR();
 
