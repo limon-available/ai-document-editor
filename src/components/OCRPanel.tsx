@@ -8,8 +8,6 @@ interface Props {
 
   setAiPrompt: any;
 
-  loading: boolean;
-
   onExtract: () => void;
 
   onAIEdit: () => void;
@@ -21,7 +19,6 @@ function OCRPanel({
   editedText,
   aiPrompt,
   setAiPrompt,
-  loading,
   onExtract,
   onAIEdit,
 }: Props) {
