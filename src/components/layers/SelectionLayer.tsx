@@ -1,0 +1,1 @@
+interface Props { x: number; y: number; width: number; height: number; } function SelectionLayer({ x, y, width, height, }: Props) { return ( <div style={{ position: "absolute", left: x, top: y, width, height, border: "2px dashed red", pointerEvents: "none", }} /> ); } export default SelectionLayer;

@@ -1,0 +1,1 @@
+import { useLayerStore } from "../../store/layerStore"; function RenderLayer() { const layers = useLayerStore( (state) => state.layers ); return ( <> {layers.map((layer) => ( <div key={layer.id} style={{ position: "absolute", left: layer.x, top: layer.y, background: "white", padding: "4px", }} > {layer.text} </div> ))} </> ); } export default RenderLayer;

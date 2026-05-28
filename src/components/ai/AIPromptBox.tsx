@@ -1,0 +1,2 @@
+interface Props { prompt: string; setPrompt: ( value: string ) => void; onRun: () => void; loading: boolean; } function AIPromptBox({ prompt, setPrompt, onRun, loading, }: Props) { return ( <div> <h3>AI Prompt</h3> <textarea value={prompt} onChange={(e) => setPrompt(e.target.value) } placeholder="Change amount to $500" style={{ width: "300px", height: "120px", }} /> <button onClick={onRun} disabled={loading} > 
+{loading ? "Generating..." : "Run AI Edit"} </button> </div> ); } export default AIPromptBox;

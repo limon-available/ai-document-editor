@@ -1,0 +1,1 @@
+interface Props { result: string; } function AIResult({ result, }: Props) { return ( <div> <h3>AI Result</h3> <p>{result}</p> </div> ); } export default AIResult;

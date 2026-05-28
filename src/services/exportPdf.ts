@@ -1,0 +1,1 @@
+import jsPDF from "jspdf"; export function exportPDF( imageData: string ) { const pdf = new jsPDF(); pdf.addImage( imageData, "PNG", 10, 10, 180, 120 ); pdf.save("edited-document.pdf"); }

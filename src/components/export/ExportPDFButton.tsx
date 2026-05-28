@@ -1,0 +1,1 @@
+import { exportPDF } from "../../services/exportPdf"; interface Props { canvas: | HTMLCanvasElement | null; } function ExportPDFButton({ canvas, }: Props) { const handleExport = () => { if (!canvas) return; const imageData = canvas.toDataURL("image/png"); exportPDF(imageData); }; return ( <button onClick={handleExport}> Export PDF </button> ); } export default ExportPDFButton;

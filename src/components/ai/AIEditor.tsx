@@ -1,0 +1,1 @@
+interface Props { originalText: string; aiText: string; } function AIEditor({ originalText, aiText, }: Props) { return ( <div> <h3>Original Text</h3> <textarea value={originalText} readOnly style={{ width: "300px", height: "120px", }} /> <h3>AI Edited Text</h3> <textarea value={aiText} readOnly style={{ width: "300px", height: "120px", }} /> </div> ); } export default AIEditor;

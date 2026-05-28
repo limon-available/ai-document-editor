@@ -1,0 +1,1 @@
+export function mapCanvasCoordinates( x: number, y: number, scale: number ) { return { mappedX: x / scale, mappedY: y / scale, }; }

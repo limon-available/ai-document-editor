@@ -1,0 +1,1 @@
+import { create } from "zustand"; interface Layer { id: number; text: string; x: number; y: number; } interface LayerState { layers: Layer[]; addLayer: ( layer: Layer ) => void; } export const useLayerStore = create<LayerState>((set) => ({ layers: [], addLayer: (layer) => set((state) => ({ layers: [ ...state.layers, layer, ], })), }));

@@ -1,0 +1,1 @@
+import { useState } from "react"; export function useTextReplacement() { const [replacedText, setReplacedText] = useState(""); const replaceText = ( newText: string ) => { setReplacedText(newText); }; return { replacedText, replaceText, }; }

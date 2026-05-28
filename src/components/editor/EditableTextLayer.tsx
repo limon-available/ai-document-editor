@@ -1,0 +1,1 @@
+interface Props { text: string; x: number; y: number; } function EditableTextLayer({ text, x, y, }: Props) { return ( <div style={{ position: "absolute", left: x, top: y, background: "white", padding: "4px", border: "1px solid #ccc", }} > {text} </div> ); } export default EditableTextLayer;

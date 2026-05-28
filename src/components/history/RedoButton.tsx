@@ -1,0 +1,1 @@
+import { useHistoryStore } from "../../store/historyStore"; function RedoButton() { const redo = useHistoryStore( (state) => state.redo ); return ( <button onClick={redo}> Redo </button> ); } export default RedoButton;

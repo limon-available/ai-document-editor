@@ -1,0 +1,1 @@
+import { useHistoryStore } from "../../store/historyStore"; function UndoButton() { const undo = useHistoryStore( (state) => state.undo ); return ( <button onClick={undo}> Undo </button> ); } export default UndoButton;
